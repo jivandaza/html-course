@@ -1,0 +1,43 @@
+.scroll {
+  cursor: pointer;
+  padding: 0;
+  left: 2%;
+  bottom: 1%;
+  position: fixed;
+  z-index: 99999;
+  outline: none;
+  opacity: 1;
+  transition: 0.5s ease-out;
+  border-radius: 50px;
+  background-color: rgb(239, 175, 56);
+  color: white;
+  border: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll:hover {
+  background-color: white;
+  color: rgb(239, 175, 56);
+  border: thin solid rgb(239, 175, 56);
+  opacity: 0.9;
+}
+.scroll > i {
+  font-size: 30px;
+}
+.scroll.disabled {
+  opacity: 0;
+  bottom: -5vh;
+}
+.scroll img {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+}
+.scroll img:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,928 @@
+:root {
+    --text: #e0f7fa;
+    --background: #263238; 
+}
+
+/*****? RESET *****/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+}
+
+
+/*****? HEADER PAGE *****/
+.header {
+    display: flex;
+    background-color: rgb(239, 175, 56);
+    padding: 0 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: white;
+    height: 60px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 998;
+}
+.header:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+}
+.left-icon {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-icon a {
+    text-decoration: none;
+    font-size: 40px;
+    color: inherit;
+    background-color: inherit;
+    border-radius: 50%;
+}
+.left-icon * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.left-icon a:hover {
+    opacity: .7;
+}
+.center-title {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+}
+.center-title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-family: sans-serif;
+    color: inherit;
+    cursor: default;
+}
+.center-title h1:hover {
+    opacity: .7;
+}
+.right-icons ul {
+    width: 100px;
+    padding-left: 0;
+}
+.right-icons li {
+    display: inline-flex;
+    margin-right: 5px;
+}
+.right-icons a {
+    font-size: 1.5rem;
+    list-style: none;
+    color: inherit;
+}
+.right-icons a:hover {
+    opacity: .7;
+}
+
+/*****? ARTICLES *****/
+article {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+main > article {
+    border-radius: 20px;
+    padding: 20px 0;
+}
+article * {
+    margin-top: .8rem;
+}
+article h2 {
+    margin-bottom: .8rem;
+}
+
+/*****? TITLES SECTIONS *****/
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    border-style: solid;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 50%;
+    border-color: rgb(239, 175, 56);
+    border-width: .15rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor:default;
+    font-size: 1.2rem;
+
+}
+.title h2:hover {
+    background: rgb(239, 175, 56);
+    border-color: rgb(239, 175, 56);
+}
+
+/*****? FOOTER SECTION *****/
+.footer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section a {
+    text-decoration: none;
+    color: rgb(239, 175, 56);
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    border: medium solid rgb(239, 175, 56);
+    border-radius: .5rem;
+    padding: 8px 0;
+}
+.footer-section i {
+    margin-top: 4px;
+}
+.footer-section a:hover {
+    opacity: 0.7;
+    box-shadow:
+        inset 0 -2em 2em rgba(0,0,0,0.1),
+            0 0  0 2px rgb(239, 175, 56),
+            0.2em 0.2em 1em rgba(0,0,0,0.3);;
+    cursor: pointer;
+}
+.footer-section * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****? HEADER TAGS *****/
+.header-tags {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#header-tags {
+    margin-top: 80px;
+}
+.header-tags 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 20px;
+} 
+.header-tags h1 {
+    color: white;
+    background-color: rgb(239, 175, 56);
+    font-size: 2rem;
+    margin-bottom: 12.800px;
+}
+.header-tags h1:hover {
+    color: rgb(239, 175, 56);
+    cursor: default;
+    background-color: rgb(244, 225, 188);
+}
+.header-tags h2 {
+    color: white;
+    background-color: rgb(239, 175, 56);
+    margin-bottom: 12.800px;
+}
+.header-tags h2:hover {
+    color: rgb(239, 175, 56);
+    cursor: default;
+    background-color: rgb(244, 225, 188);
+}
+.header-tags h3 {
+    color: white;
+    background-color: rgb(239, 175, 56);
+    margin-bottom: 12.800px;
+}
+.header-tags h3:hover {
+    color: rgb(239, 175, 56);
+    cursor: default;
+    background-color: rgb(244, 225, 188);
+}
+.header-tags h4 {
+    color: white;
+    background-color: rgb(239, 175, 56);
+    margin-bottom: 12.800px;
+}
+.header-tags h4:hover {
+    color: rgb(239, 175, 56);
+    cursor: default;
+    background-color: rgb(244, 225, 188);
+}
+.header-tags h5 {
+    color: white;
+    background-color: rgb(239, 175, 56);
+    margin-bottom: 12.800px;
+}
+.header-tags h5:hover {
+    color: rgb(239, 175, 56);
+    cursor: default;
+    background-color: rgb(244, 225, 188);
+}
+.header-tags h6 {
+    color: white;
+    background-color: rgb(239, 175, 56);
+    margin-bottom: 12.800px;
+}
+.header-tags h6:hover {
+    color: rgb(239, 175, 56);
+    cursor: default;
+    background-color: rgb(244, 225, 188);
+}
+
+/*****? BASIC TEXT LABELS *****/
+.basic-text-labels {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.basic-text-labels p {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px 20px;
+}
+.basic-text-labels p:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.basic-text-labels mark {
+    background-color: yellow;
+    color: inherit;
+    font-weight: bold;
+}
+
+/*****? SEMANTIC TEXT TAGS *****/
+.semantic-text-tags {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.semantic-text-tags p, blockquote, cite {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px 20px;
+}
+.semantic-text-tags p:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.semantic-text-tags blockquote:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.semantic-text-tags cite:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+
+/*****? JUMP TAGS *****/
+.jump-tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jump-tags p {
+    width: 50%;
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.jump-tags p:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+
+/*****? FORMATTING TAGS *****/
+.formatting-tags {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.formatting-tags .formatting-pre {
+    margin: 0;
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.formatting-tags .formatting-pre:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.formatting-tags .formatting-code {
+    margin: 0;
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.formatting-tags .formatting-code:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.formatting-code-js {
+    padding-left: 0;
+    margin: 0;
+}
+.formatting-code-js span {
+    background-color: rgb(16, 16, 16);
+}
+
+/*****? STRUCTURAL SEMANTIC TAGS *****/
+.structural-semantic-tags {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.structural-semantic-tags > * {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.structural-semantic-tags > *:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+#structural-semantic-tags .structural-semantic-tags > article {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(239, 175, 56);
+    color: white;
+} 
+
+/*****? BLOCK TAGS VS INLINE TAGS *****/
+.block-inline-tags > div {
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-bottom: .8rem;
+}
+.block-inline-tags > div:hover {
+    opacity: .7;
+    cursor: default;
+}
+.block-inline-tags > span {
+    margin-top: .8rem;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.block-inline-tags > span:hover {
+    opacity: .7;
+    cursor: default;
+}
+
+/*****? IMAGE LABEL *****/
+.image-label{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.image-label img {
+    max-width: 100%;
+    height: auto;
+}
+.image-label img:hover {
+    opacity: .7;
+    cursor: default;
+}
+
+/*****? FIGURE LABEL *****/
+.figure-label {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.figure-label img {
+    max-width: 100%;
+    height: auto;
+}
+.figure-label img:hover {
+    opacity: .7;
+    cursor: default;
+}
+.figure-label figure {
+    margin: 0;
+}
+.figure-label figcaption {
+    background-color: rgb(239, 175, 56);
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.figure-label figcaption:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+
+/*****? ORDERED LIST *****/
+.ordered-lists {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ordered-lists ol {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 6px;
+    padding-right: 8px;
+}
+.ordered-lists ol:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.ordered-lists li:last-child{
+    margin-bottom: 0.8rem;
+}
+.ordered-lists li:hover {
+    font-weight: bold;
+}
+
+/*****? UNORDERED LIST *****/
+.unordered-lists {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.unordered-lists ul {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 6px;
+    padding-right: 8px;
+}
+.unordered-lists ul:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.unordered-lists li:last-child{
+    margin-bottom: 0.8rem;
+}
+.unordered-lists li:hover {
+    font-weight: bold;
+}
+
+/*****? DEFINITION LIST *****/
+.definition-lists {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.definition-lists dl {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.definition-lists dl:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.definition-lists dd {
+    font-weight: bold;
+    margin-bottom: .8rem;
+}
+
+/*****? TABLES *****/
+.tables {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.tables table {
+    border-radius: 6px;
+    background-color: rgb(239, 175, 56);
+    color: white;
+}
+.tables td {
+    text-align: center;
+    padding: 10px 20px;
+}
+.tables td:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.tables tr:first-child{
+    font-weight: initial;
+    background-color: rgb(234, 156, 12);
+    border: 2px solid;
+    font-weight: bold;
+}
+table:nth-child(2) tbody tr:nth-child(1) {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    font-weight: normal;
+}
+.tables th {
+    padding: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: rgb(234, 156, 12);
+    color: white;
+    cursor: default;
+}
+.tables th:hover {
+    background-color: rgb(239, 175, 56);
+    
+}
+
+/*****? LINKS *****/
+.links {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.links a {
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: rgb(239, 175, 56);
+    color: white;
+}
+.links a:first-child:hover {
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+    font-weight: bold;
+}
+.links a:nth-child(2):hover {
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+    border: medium solid rgb(239, 175, 56);
+    font-weight: bold;
+}
+.links a:nth-child(3):hover {
+    color: rgb(239, 175, 56);
+    font-weight: bold;
+    opacity: .7;
+}
+.links a:nth-child(4) {
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+}
+.links a:nth-child(4):hover {
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+    font-weight: bold;
+}
+.links a:nth-child(5) {
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+}
+.links a:nth-child(5):hover {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    font-weight: bold;
+}
+.links a:nth-child(6) {
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+}
+.links a:nth-child(6):hover {
+    background-color: inherit;
+    font-weight: bold;
+    border: medium solid rgb(239, 175, 56);
+}
+
+/*****? INTERACTIVE ELEMENTS *****/
+.interactive-elements {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.interactive-elements button {
+    padding: 10px 20px;
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border: 0;
+}
+.interactive-elements button:hover {
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+    font-weight: bold;
+    border: thin solid rgb(239, 175, 56);
+    cursor: pointer;
+}
+.interactive-elements summary {
+    padding: 10px 20px;
+    border: thin solid rgb(239, 175, 56);
+    background-color: inherit;
+    cursor: pointer;
+    color: rgb(239, 175, 56);
+}
+.interactive-elements summary:hover {
+    background-color: rgb(239, 175, 56);
+    color: white;
+}
+.interactive-elements details {
+    text-align: center;
+}
+.interactive-elements summary {
+    text-align: start;
+}
+.interactive-elements dialog {
+    display: none;
+}
+.interactive-elements h3 {
+    padding: 10px 0;
+    color: rgb(239, 175, 56);
+}
+.interactive-elements p {
+    padding: 10px 0;
+    color: rgb(239, 175, 56);
+}
+.interactive-elements img {
+    width: 100%;
+}
+
+/*****? AUDIO AND VIDEO *****/
+.audio-video {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.audio-video audio {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.audio-video video {
+    max-width: 100%;
+    height: auto;
+}
+
+/*****? IFRAMES *****/
+.iframes {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.iframes iframe {
+    width: 800px;
+}
+
+/*****? FORMS *****/
+.forms {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.forms h3 {
+    width: 40%;
+    color: rgb(239, 175, 56);
+    text-transform: capitalize;
+    letter-spacing: .3rem;
+    border-bottom: medium solid rgb(239, 175, 56);
+}
+.forms h3:hover {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    cursor: default;
+}
+.forms input {
+    padding: 5px 6px;
+    border: thin solid rgb(239, 175, 56);
+    border-radius: 8px;
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+}
+.forms input[i] {
+    padding: 2px 5px;
+}
+.forms input::placeholder {
+    color: rgb(239, 175, 56);
+}
+.forms input:hover {
+    background-color: rgb(239, 175, 56);
+    color: white;
+}
+.forms input:hover::placeholder {
+    color: white;
+}
+.forms input:focus {
+    outline: 0;
+}
+.forms input[type="button"] {
+    padding: 10px 0;
+    cursor: pointer;
+}
+.forms input[type="submit"] {
+    padding: 10px 8px;
+    cursor: pointer;
+}
+.forms input[type="reset"] {
+    padding: 10px 8px;
+    cursor: pointer;
+}
+.forms input[type="checkbox"] {
+    background-color: rgb(239, 175, 56);
+}
+.forms input[type="file"] {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.forms textarea {
+    border: thin solid rgb(239, 175, 56);
+    color: rgb(239, 175, 56);
+    background-color: inherit;
+}
+.forms textarea::placeholder {
+    color: rgb(239, 175, 56);
+}
+.forms textarea:hover {
+    background-color: rgb(239, 175, 56);
+    color: white;
+}
+.forms textarea:hover::placeholder {
+    color: white !important;
+}
+.forms textarea:focus {
+    outline: 0;
+}
+.forms select {
+    border: thin solid rgb(239, 175, 56);
+    color: rgb(239, 175, 56);
+    background-color: inherit;
+}
+.forms select:hover {
+    background-color: rgb(239, 175, 56);
+    color: white;
+}
+.forms form {
+    width: 60%;
+    padding: 5px 12px;
+    border: thin solid rgb(239, 175, 56);
+}
+.forms label {
+    color: rgb(239, 175, 56);
+}
+.forms label:hover {
+    opacity: .7;
+}
+.forms form > label {
+    display: block;
+}
+.forms form > input {
+    margin-top: 0;
+}
+.forms form > input[type="text"], 
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+}
+.forms form > input[type="submit"] {
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 8px;
+}
+.forms form > input[type="submit"]:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    border: thin solid rgb(239, 175, 56);
+}
+.forms form > input[type="reset"] {
+    display: block;
+    margin: 12px 0;
+    width: 100%;
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+    border-radius: 8px;
+}
+.forms form > input[type="reset"]:hover {
+    background-color: rgb(239, 175, 56);
+    color: white;
+}
+.forms form > p {
+    margin: 0;
+    color: black;
+}
+.forms form > select {
+    margin-bottom: .8rem;
+}
+.forms .form-update > label {
+    display: inline;
+    color: black;
+}
+.forms .form-update > input[type="radio"] {
+    margin: .8rem 0;
+}
+.forms form:last-child > input {
+    margin-top: .8rem;
+}
+
+/*****? DATA ATTRIBUTES *****/
+.data-attributes {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.data-attributes ul {
+    background-color: rgb(239, 175, 56);
+    color: white;
+    border-radius: 6px;
+    padding-right: 8px;
+}
+.data-attributes ul:hover {
+    background-color: rgb(244, 225, 188);
+    color: rgb(239, 175, 56);
+    cursor: default;
+}
+.data-attributes li:last-child{
+    margin-bottom: 0.8rem;
+}
+.data-attributes li:hover {
+    font-weight: bold;
+}   
+
+/*****? FOOTER *****/
+.footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    color: rgb(239, 175, 56);
+    border-top: thin solid rgb(239, 175, 56);
+}
+.footer:hover {
+    background-color: rgb(239, 175, 56);
+    color: white;
+}
+.footer ul {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+.footer li {
+    display: inline;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+.footer a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+.footer a:hover {
+    color: rgb(244, 225, 188);
+}
+.footer p {
+    margin: 15px 0;
+}
+.footer p:hover {
+    cursor: pointer;
+    color: rgb(244, 225, 188);
+}

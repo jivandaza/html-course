@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!-- lang: spanish colombian -->
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title: between 55 and 65 characters -->
+    <title>learning HTML</title>
+    <!-- meta (description): no more than 165 characters -->
+    <meta
+        name="description" 
+        content="This is a course in which you will learn everything about HTML with @JonMircha"
+    >
+    <!-- most important URL of the web page -->
+    <link rel="canonical" href="https://tu-dominio.com/url-canonica">
+    <!-- head icon (pc devices) -->
+    <link rel="icon" href="./assets/favicon.png">
+    <!-- head icon (movil devices) -->
+    <link rel="apple-touch-icon" href="./assets/favicon.png">
+    <!-- head theme color (movil devices) -->
+    <meta name="theme-color" content="#FF6600">
+    <!-- social media meta tags -->
+    <meta property="og:title" content="Learning HTML5">
+    <meta 
+        property="og:description" 
+        content="This is a course in which you will learn everything about HTML5 with @JonMircha"
+    >
+    <meta 
+        property="og:image" 
+        content="https://tu-dominio.com/assets/periodic-table-of-html-elements.png"
+    >
+    <meta property="og:url" content="https://your-domain.com/index.html">
+    <!-- styles in HTML -->
+    <style>
+        h2 {
+            color: rgb(239, 175, 56);
+        }
+        h2:hover {
+            color: white;
+        }
+    </style>
+    <!-- style icons -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    >
+    <!-- boostrap icons -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    >
+    <!-- Hamburger Library -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    />
+    <!-- page style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tema code-prettify.css">
+    <link rel="stylesheet" href="./css/hamburger-menu.css" />
+    <link rel="stylesheet" href="./css/toggle.css" />
+    <link rel="stylesheet" href="./css/scroll.css" />
+    <!-- prettify script -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"
+    >
+    </script>
+</head>
+<body>
+
+    <!-- Comments are made with the keys CTRL + } -->
+
+    <!-- header -->
+    <header class="header">
+        <div class="left-icon">
+            <a href="./index.html"><i class="fa-brands fa-html5"></i></a>
+        </div>
+        <div class="center-title">
+            <h1>Learning HTML5</h1>
+        </div>
+        <nav class="right-icons">
+            <ul class="nav-links">
+                <li><a href="https://www.linkedin.com/in/jossid-ivan-daza-lobo-7544b711a/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/jivandaza" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=573006586235" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Screen buttons -->
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button> 
+    <button type="button" class="scroll disabled">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+
+    <label id="toggle-colors">🌚</label>
+
+    <!-- Aside Nav -->
+    <aside class="panel">
+        <nav class="menu">
+            <a href="./index.html#header-tags">Header Tags</a>
+            <a href="./index.html#basic-text-labels">Basic Text Labels</a>
+            <a href="./index.html#semantic-text-tags">Semantic Text Tags</a>
+            <a href="./index.html#jump-tags">Jump Tags</a>
+            <a href="./index.html#formatting-tags">Formatting Tags</a>
+            <a href="./index.html#structural-semantic-tags">Structural Semantic Tags</a>
+            <a href="./index.html#block-inline-tags">Block Tags VS Inline Tags</a>
+            <a href="./index.html#image-label">Image Label</a>
+            <a href="./index.html#figure-label">Figure Label</a>
+            <a href="./index.html#ordered-lists">Ordered Lists</a>
+            <a href="./index.html#unordered-lists">Unordered Lists</a>
+            <a href="./index.html#definition-lists">Definition Lists</a>
+            <a href="./index.html#tables">Tables</a>
+            <a href="./index.html#links">Links</a>
+            <a href="./index.html#interactive-elements">Interactive Elements</a>
+            <a href="./index.html#audio-video">Audio and Video</a>
+            <a href="./index.html#iframes">Iframes</a>
+            <a href="./index.html#forms">Forms</a>
+            <a href="./index.html#data-attributes">Data Attributes</a>
+        </nav>
+    </aside>
+
+    <!-- main -->
+    <main>
+        <!-- header tags -->
+        <article id="header-tags">
+            <header class="title">
+                <h2>Header tags</h2>
+            </header>
+            <section class="header-tags">
+                <h1>Level header 1</h1>
+                <h2>Level header 2</h2>
+                <h3>Level header 3</h3>
+                <h4>Level header 4</h4>
+                <h5>Level header 5</h5>
+                <h6>Level header 6</h6>
+            </section>  
+            <hr>
+        </article>
+
+        <!-- basic text labels -->
+        <article id="basic-text-labels">
+            <header class="title">
+                <h2>Basic text labels</h2>
+            </header>
+            <section class="basic-text-labels">
+                <p>Hello, writing my first HTML document</p>
+                <p>Learning about web design</p>
+                <p>This is a paragraph</p>
+                <p>Word in <b>bold font</b>, <i>italics</i>, <u>underlined</u>, E = MC<sup>2</sup>, H<sub>2</sub>O, <mark>mark text</mark>, <small>small letters</small></p>
+            </section>
+            <hr>
+        </article>
+
+        <!-- semantic text tags -->
+        <article id="semantic-text-tags">
+            <header class="title">
+                <h2>Semantic text tags</h2>
+            </header>
+            <section class="semantic-text-tags">
+                <p><strong>This text is important</strong></p>
+                <p><em>This text emphasizes</em></p>
+                <blockquote>I only know that I know nothing</blockquote>
+                <cite>Socrates</cite>
+            </section>
+            <hr>
+        </article>
+
+        <!-- jump tags -->
+        <article id="jump-tags">
+            <header class="title">
+                <h2>Jump tags</h2>
+            </header>
+            <section class="jump-tags">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptas ex quae quia autem perferendis eum quisquam dolore! Debitis vel earum, nam laboriosam, obcaecati ab cumque corrupti eveniet impedit omnis quidem.
+                </p>
+            </section>
+            <hr>
+        </article>
+
+        <!-- formatting tags -->
+        <article id="formatting-tags">
+            <header class="title">
+                <h2>Formatting tags</h2>
+            </header>
+            <section class="formatting-tags">
+                <p>
+                    <pre class="formatting-pre">
+                    Tasks to do:
+                    - HTML
+                        - Finish recording video.
+                        - Edit video.
+                    - CSS
+                        - Finish recording video.
+                        - Edit video.
+                    </pre>
+                </p>
+                <p class="formatting-code">
+                    <code>This text is in code format</code>
+                </p>
+                <p>
+                    <pre class="prettyprint linenums:1 formatting-code-js"><code class="language-javascript">let i = 10;
+while (i &lt;= 30) {
+    document.write("El valor del bucle es: " + i + "<br>");
+    if (i == 20){
+        document.write("Se rompió la ejecución del bucle.");
+        break;
+    }
+    i++;
+}
+                    </code></pre>
+                </p>
+            </section>
+            <hr>
+        </article>
+
+        <!-- structural semantics tags -->
+        <article id="structural-semantic-tags">
+            <header class="title">
+                <h2>Structural Semantic Tags</h2>
+            </header>
+            <section class="structural-semantic-tags">
+                <div> div - it is a container label that has no semantic</div>
+                <header>header - head of a website or a section</header>
+                <main>
+                    main - defines the main section of the document,
+                    there can only be a label per document HTML
+                </main>
+                <footer>footer - pye of a website or section</footer>
+                <nav>nav - represents a navigation</nav>
+                <article>
+                    article - represents a self -contained section
+                    (which alone is explained)
+                </article>
+                <aside>
+                    aside - represents complementary or secondary content
+                </aside>
+                <section>
+                    section - represents a content section
+                </section>
+                <address> address - represents a physical address</address>
+            </section>
+            <hr>
+        </article>
+
+        <!-- block tags vs inline tags -->
+        <article id="block-inline-tags">
+            <header class="title">
+                <h2>Block tags vs inline tags</h2>
+            </header>
+            <section class="block-inline-tags">
+                <div style="background-color: yellow;">
+                    Block label par excellence is div, a block label is that
+                    that generates line jumps with their sister labels
+                </div>
+                <br>
+                <span style="background-color: greenyellow;">
+                    Line label par excellence is span, a line label is that
+                    that only occupies the necessary space that has its content
+                </span>
+                <span style="background-color: green;">
+                    Hi, I'm another span
+                </span>
+            </section>
+            <hr>
+        </article>
+
+        <!-- image label -->
+        <article id="image-label">
+            <header class="title">
+                <h2>Image label</h2>
+            </header>
+            <section class="image-label">
+                <img 
+                    src="./assets/periodic-table-of-html-elements.png" 
+                    alt="HTML periodic table of elements"
+                >
+                <img 
+                    src="./assets/puesta-sol.jpg"
+                    alt="Sunset and Kenai"
+                >
+                <img 
+                    src="./assets/this-is-fine.gif"
+                    alt="Meme of the dog ¡this is fine!"
+                >
+                <img 
+                    src="./assets/kEnAi.svg"
+                    alt="Kenai"
+                >
+            </section>
+            <hr>
+        </article>
+
+        <!-- figure label -->
+        <article id="figure-label">
+            <header class="title">
+                <h2>Figure label</h2>
+            </header>
+            <section class="figure-label">
+                <figure>
+                    <img 
+                        src="./assets/periodic-table-of-html-elements.png" 
+                        alt="HTML periodic table of elementsL"
+                    >   
+                    <!-- Opcional -->
+                    <figcaption>HTML periodic table of elements</figcaption> 
+                </figure>
+            </section>
+            <hr>
+        </article>
+
+        <!-- ordered lists -->
+        <article id="ordered-lists">
+            <header class="title">
+                <h2>Ordered lists</h2>
+            </header>
+            <section class="ordered-lists">
+                <ol>
+                    <li>Spring</li>
+                    <li>Summer</li>
+                    <li>Autumn</li>
+                    <li>Winter</li>
+                </ol>
+                <ol start="3">
+                    <li>Spring</li>
+                    <li>Summer</li>
+                    <li>Autumn</li>
+                    <li>Winter</li>
+                </ol>
+                <ol reversed>
+                    <li>Spring</li>
+                    <li>Summer</li>
+                    <li>Autumn</li>
+                    <li>Winter</li>
+                </ol>
+                <ol type="A">
+                    <li>Spring</li>
+                    <li>Summer</li>
+                    <li>Autumn</li>
+                    <li>Winter</li>
+                </ol>
+            </section>
+            <hr>
+        </article>
+
+        <!-- unordered lists -->
+        <article id="unordered-lists">
+            <header class="title">
+                <h2>Unordered lists</h2>
+            </header>
+            <section class="unordered-lists">
+                <ul>
+                    <li>Finish recording video</li>
+                    <li>Edit video</li>
+                    <li>Upload video to YT</li>
+                </ul>
+                <ul type="circle">
+                    <li>Finish recording video</li>
+                    <li>Edit video</li>
+                    <li>Upload video to YT</li>
+                </ul>
+                <ul type="square">
+                    <li>Finish recording video</li>
+                    <li>Edit video</li>
+                    <li>Upload video to YT</li>
+                </ul>
+            </section>
+            <hr>
+        </article>
+
+        <!-- definition lists -->
+        <article id="definition-lists">
+            <header class="title">
+                <h2>Definition lists</h2>
+            </header>
+            <section class="definition-lists">
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>It is a markup language that defines the content of the web</dd>
+                    <dt>CSS</dt>
+                    <dd>It is a definition language that styles HTML code</dd>
+                    <dt>JAVASCRIPT</dt>
+                    <dd>It is the programming language of the web</dd>
+                </dl>
+            </section>
+            <hr>
+        </article>
+
+        <!-- tables -->
+        <article id="tables">
+            <header class="title">
+                <h2>Tables</h2>
+            </header>
+            <section class="tables">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Constellation</td>
+                        <td>Type</td>
+                    </tr>
+                    <tr>
+                        <td>Ikki</td>
+                        <td>Fenix</td>
+                        <td>Bronce</td>
+                    </tr>
+                    <tr>
+                        <td>Shaina</td>
+                        <td>Ofiuco</td>
+                        <td>Plata</td>
+                    </tr>
+                    <tr>
+                        <td>Saga</td>
+                        <td>Geminis</td>
+                        <td>Dorado</td>
+                    </tr>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Table of the saints of athens</th>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <th>Constellation</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ikki</td>
+                            <td>Fenix</td>
+                            <td>Bronce</td>
+                        </tr>
+                        <tr>
+                            <td>Mistry</td>
+                            <td>Lagarto</td>
+                            <td rowspan="2">Plata</td>
+                        </tr>
+                        <tr>
+                            <td>Shaina</td>
+                            <td rowspan="2">Ofiuco</td>
+                        </tr>
+                        <tr>
+                            <td>Odiseo</td>
+                            <td rowspan="2">Dorado</td>
+                        </tr>
+                        <tr>
+                            <td>Saga</td>
+                            <td>Geminis</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3"><small>Seint seiya was created by Kurumada</small></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <hr>
+        </article>
+
+        <!-- links -->
+        <article id="links">
+            <header class="title">
+                <h2>Links</h2>
+            </header>
+            <section class="links">
+                <!-- Internos -->
+                <a href="./welcome.html">Welcome page</a>
+                <!-- Externos -->
+                <a 
+                    href="https://jonmircha.com/" 
+                    target="_blank" 
+                    rel="nofollow"
+                >
+                <i class="bi bi-globe"></i> Jon Mircha
+                </a>
+                <a 
+                    href="https://jonmircha.com/" 
+                    target="_blank" 
+                    rel="nofollow"
+                >
+                   <img 
+                        src="./assets/kEnAi.svg"
+                        alt="Kenai"
+                        width="50px"
+                        height="50px"
+                    >
+                </a>
+                <a href="https://youtube.com/jonmircha" target="_blank"                   rel="nofollow" class="up">
+                    <i class="bi bi-youtube"></i> Jon Mircha
+                </a>
+                <a href="mailto:joser1.jidl@gmail.com"><i class="bi bi-envelope-fill"></i> send mail</a>
+                <a href="tel:5215512345678"><i class="bi bi-telephone-plus"></i> dial cell</a>
+            </section>
+            <hr>
+        </article>
+
+        <!-- interactive elements -->
+        <article id="interactive-elements">
+            <header class="title">
+                <h2>Interactive elements</h2>
+            </header>
+            <section class="interactive-elements">
+                <button onclick="alert('Hello, have you clicked on the button')">This is a button</button>
+                <br>
+                <details>
+                    <summary>accordion title</summary>
+                    <article>
+                        <h3>accordion content</h3>
+                        <p>accordion agenda part 1</p>
+                        <img 
+                            src="./assets/this-is-fine.gif"
+                            alt="Meme del perro ¡this is fine!"
+                        >
+                        <p>accordion agenda part 2</p>
+                        <p>accordion agenda final part</p>
+                    </article>
+                </details>
+                <br>
+                <details open>
+                    <summary>open accordion title</summary>
+                    <article>
+                        <h3>accordion content</h3>
+                        <p>accordion agenda part 1</p>
+                        <img 
+                            src="./assets/this-is-fine.gif"
+                            alt="Meme del perro ¡this is fine!"
+                        >
+                        <p>accordion agenda part 2</p>
+                        <p>accordion agenda final part</p>
+                    </article>
+                </details>
+                <br>
+                <dialog open> <!-- label in update -->
+                    This is a modal window in HTML
+                </dialog>
+            </section>
+            <hr>
+        </article>
+
+        <!-- audio and video -->
+        <article id="audio-video">
+            <header class="title">
+                <h2>Audio and Video</h2>
+            </header>
+            <section class="audio-video">
+                <audio src="./assets/media/Feels-PatrickPatrikios.mp3" preload controls muted></audio>
+                <video 
+                    src="./assets/media/kenai.mp4" 
+                    preload controls muted 
+                    poster="./assets/puesta-sol.jpg">
+                </video>
+            </section>
+            <hr>
+        </article>
+
+        <!-- iframes -->
+        <article id="iframes">
+            <header class="title">
+                <h2>Iframes</h2>
+            </header>
+            <section class="iframes">
+                <!-- No mas de un iframe por documento HTML -->
+                <iframe src="./welcome.html" frameborder="1"></iframe> 
+                <iframe src="https://jonmircha.com/" frameborder="1"></iframe>
+                <iframe src="https://www.facebook.com/" frameborder="1"></iframe>
+                <iframe src="./assets/media/emmet-cheat-sheet.pdf" frameborder="1"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62775.31309548249!2d-73.29326922516921!3d10.464588493674768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab9b5d6cf71d7%3A0x84a43625b14c234a!2sValledupar%2C%20Cesar!5e0!3m2!1ses-419!2sco!4v1677515339295!5m2!1ses-419!2sco" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+            <hr>
+        </article>
+
+        <!-- forms -->
+        <article id="forms">
+            <header class="title">
+                <h2>Forms</h2>
+            </header>
+            <section class="forms">
+                <h3>form elements</h3>
+                <input type="text" placeholder="text">
+                <input type="checkbox">
+                <input type="radio">
+                <input type="date">
+                <input type="color">
+                <input type="button" value="button">
+                <input type="submit" value="send">
+                <input type="reset" value="reset">
+                <input type="file">
+                <input type="file" multiple>
+                <input type="hidden" name="idioma" value="es">
+                <input type="email" placeholder="email">
+                <input type="number" placeholder="number">
+                <input type="tel" placeholder="phone">
+                <input type="password" placeholder="password">
+                <input type="search" placeholder="search">
+                <textarea cols="50" rows="10" placeholder="text in area"></textarea>
+                <select name="" id="">
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="">JAVASCRIPT</option>
+                </select>
+                <select name="" id="" multiple>
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="">JAVASCRIPT</option>
+                    <option value="">PHP</option>
+                    <option value="">PYTHON</option>
+                </select>
+                <input type="text" readonly value="JonMircha">
+                <input type="text" readonly disabled value="JonMircha">
+
+                <h3>start of form</h3>
+                <!-- method="GET" | https://jonmircha.com/?usuario=daza&password=safdsfdsf -->
+                <!-- method="POST" https://jonmircha.com/ -->
+                <form action="https://jonmircha.com/"
+                      method="POST"             autocomplete="off"
+                >
+                    <label for="userTxt">User: </label>
+                    <input 
+                        type="text" name="user" id="userTxt" 
+                        placeholder="user" required pattern="^[A-Za-z]+$"
+                        title="El campo solo acepta letras"
+                    >
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password"            placeholder="password">
+                    <input type="submit" value="send">
+                    <input type="reset" value="reset">
+                </form>
+                <h3>start of form</h3>
+                <form action="https://jonmircha.com/" method="GET">
+                    <label for="email">Email: </label>
+                    <input 
+                        type="email" name="email" id="email" 
+                        placeholder="email" required
+                        autocomplete="off"
+                    >
+                    <label for="password">Password: </label>
+                    <input type="password" name="password2" id="password2"            placeholder="password">
+                    <input type="submit" value="send">
+                    <input type="reset" value="reset">
+                </form>
+                <h3>Selects, Radios y Checkbox</h3>
+                <form class="form-update">
+                    <p>Choose your language:</p>
+                    <select name="language" id="" required>
+                        <option value="" selected>choose an option</option>
+                        <option value="es">Spanish</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                    </select>
+                    <p>Choose your favorite programming language:</p>
+                    <input type="radio" name="language" id="radio-js"           value="js" required>
+                    <label for="radio-js">JavaScript</label>
+                    <input type="radio" name="language" id="radio-py"           value="py" checked>
+                    <label for="radio-py">Python</label>
+                    <input type="radio" name="language" id="radio-php"          value="php">
+                    <label for="radio-php">Php</label>
+                    <p>Choose your interests:</p>
+                    <label>
+                        <input type="checkbox" name="interests"             value="sports">
+                        Sports
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests"             value="finance" checked>
+                        Finance
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests"             value="health">
+                        Health
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests"             value="policy" checked>
+                        Policy
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests"             value="ecology">
+                        Ecology
+                    </label>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="terms"          required>
+                            ¿You accept terms and conditions?
+                        </label>
+                    </p>
+                    <input type="submit" value="send">
+                    <input type="reset" value="reset">
+                </form>
+                <h3>Form contact</h3>
+                <form 
+                    action="https://formsubmit.co/joser1.jidl@gmail.com" 
+                    method="POST" target="_blank"
+                >
+                    <input type="text" name="name" placeholder="enter name" 
+                        title="The name only accepts letters and whitespace" 
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" required
+                    >
+                    <input 
+                        type="email" name="email" placeholder="input email" title="Email"
+                        pattern="[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.         [a-z0-9-]+)*(\.[a-z]{2,15})$"
+                        required
+                    >
+                    <textarea 
+                        name="comments" cols="50" rows="5" 
+                        placeholder="input comments" data-pattern="^.{1,255}$"
+                        title="Your comments must not exceed 255 characters"
+                        required
+                    ></textarea>
+                    <input type="submit" value="send">
+                </form>
+            </section>
+            <hr>
+        </article>
+
+        <!-- data-attributes -->
+        <article id="data-attributes">
+            <header class="title">
+                <h2>Data attributes</h2>
+            </header>
+            <section class="data-attributes">
+                <ul>
+                    <li data-id="1" data-name="spring">Spring</li>
+                    <li data-id="2" data-name="summer">Summer</li>
+                    <li data-id="3" data-name="autumn">Autumn</li>
+                    <li data-id="4" data-name="winter">Winter</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <ul>
+            <li>
+                <a 
+                    href="https://github.com/jivandaza" 
+                    target="_blank"
+                >
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a 
+                    href="https://www.linkedin.com/in/jossid-ivan-daza-lobo-7544b711a/" 
+                    target="_blank"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a 
+                    href="https://api.whatsapp.com/send?phone=573006586235" 
+                    target="_blank"
+                >
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+            <li>
+                <a 
+                    href="https://twitter.com/jivandaza" 
+                    target="_blank"
+                >
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="copyright">© Copyright <b>Jivandaza</b> 2023</p>
+      </footer>
+
+    <!-- scripts -->
+    <script>
+        console.log('Hello we are learning HTML');
+    </script>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
